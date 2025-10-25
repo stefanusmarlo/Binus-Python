@@ -4,4 +4,4 @@ c = float(input("Masukkan nilai c: "))
 
 diskriminan = (b**2) - (4*a*c)
 
-print(f"Nilai diskriminan adalah: {diskriminan}")
+print("Nilai diskriminan adalah: {diskriminan}")
