@@ -1,11 +1,11 @@
-def is_triangle(a, b, c):
+triangle(a, b, c):
     return a + b > c and a + c > b and b + c > a
 
-def is_right_angled(a, b, c):
+right_angled(a, b, c):
     sides = sorted([a, b, c])
     return abs(sides[0]**2 + sides[1]**2 - sides[2]**2) < 1e-6
 
-def determine_triangle_type(a, b, c):
+determine_triangle_type(a, b, c):
     if not is_triangle(a, b, c):
         return "Not a Triangle"
     elif a == b == c:
