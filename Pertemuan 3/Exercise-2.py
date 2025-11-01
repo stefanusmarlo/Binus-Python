@@ -1,4 +1,3 @@
-def categorize_age(age):
     if age < 0:
         return "Invalid age. Age cannot be negative."
     elif age <= 1:
