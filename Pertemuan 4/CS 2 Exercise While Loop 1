@@ -1,0 +1,23 @@
+print("Welcome to the Triangle Filter Program!")
+
+while True:
+    
+    side_a = float(input("Enter Side A: "))
+    side_b = float(input("Enter Side B: "))
+    side_c = float(input("Enter Side C: "))
+
+    if side_a + side_b > side_c and side_a + side_c > side_b and side_b + side_c > side_a:
+        
+        if side_a == side_b == side_c:
+            print("\nIt is an Equilateral Triangle\n")
+        elif side_a == side_b or side_b == side_c or side_a == side_c:
+            print("\nIt is an Isosceles Triangle\n")
+        else:
+            print("\nIt is a Scalene Triangle\n")
+    else:
+        print("\nThe sides do not form a valid triangle.\n")
+
+    repeat = input("Do you want to repeat? (Y/N): ").strip().upper()
+    if repeat != 'Y':
+        print("\nProgram Stops\nThank you for using my program ^^")
+        break
